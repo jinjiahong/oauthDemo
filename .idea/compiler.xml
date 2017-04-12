@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="githubOauth2" />
+        <module name="oauth2server" />
+        <module name="resourceServer" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="clientServer" target="1.6" />
+      <module name="githubOauth2" target="1.6" />
+      <module name="oauth2server" target="1.6" />
+      <module name="oauthDemo" target="1.6" />
+      <module name="oauthserver" target="1.6" />
+      <module name="resourceServer" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

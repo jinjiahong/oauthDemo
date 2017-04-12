@@ -1,0 +1,31 @@
+server:
+  port: 8070
+
+
+jdbc:
+  driverClassName: com.mysql.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/oauth2.0?characterEncoding=utf8&useSSL=true
+  user: root
+  pass: 123
+
+github:
+  client:
+    clientId: ed29db8704b28925d629
+    clientSecret: 22569d85782c3275d0e040563dd23a0bea8ebc94
+    accessTokenUri: https://github.com/login/oauth/access_token
+    userAuthorizationUri: https://github.com/login/oauth/authorize
+    clientAuthenticationScheme: form
+  resource:
+    userInfoUri: https://api.github.com/user
+
+#security:
+#  oauth2:
+#    client:
+#      client-id: acme
+#      client-secret: acmesecret
+#      scope: read,write
+#      auto-approve-scopes: '.*'
+#      grant-type: password
+#  user:
+#    name: admin
+#    password: admin
