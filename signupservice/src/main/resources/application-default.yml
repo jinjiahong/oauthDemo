@@ -1,0 +1,16 @@
+mapper:
+  mappers:
+    - tk.mybatis.mapper.common.Mapper
+  before: true
+  not-empty: false
+
+server:
+  port: 6060
+
+#注册的授权客户端固定信息
+clientInfo:
+  authorizedGrantTypes: password,authorization_code,refresh_token,implicit
+  authorities: ROLE_CLIENT,ROLE_TRUSTED_CLIENT
+  accessTokenValidity: 600
+  refreshTokenValidity: 6000
+
