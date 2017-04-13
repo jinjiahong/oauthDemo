@@ -42,8 +42,8 @@ public class OAuth2SecurityConfiguration extends WebSecurityConfigurerAdapter {
 //        .withUser("bob").password("abc123").roles("USER");
 		auth.jdbcAuthentication()
 				.dataSource(dataSource)
-				.usersByUsernameQuery("select username as principal, password as credentials, true from users where username = ?")
-				.authoritiesByUsernameQuery("select username as principal, authority as role from authorities where username = ?")
+				.usersByUsernameQuery("select username as principal, password as credentials, enabled from users where username = ?")
+				.authoritiesByUsernameQuery("select username as principal, authority as role from users where username = ?")
 				.rolePrefix("ROLE_");
     }
 
