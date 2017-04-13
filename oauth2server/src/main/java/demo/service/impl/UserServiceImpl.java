@@ -1,6 +1,7 @@
-package demo.service;
+package demo.service.impl;
 
 import demo.model.User;
+import demo.service.UserService;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -10,7 +11,7 @@ import java.util.concurrent.atomic.AtomicLong;
 
 
 @Service("userService")
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl implements UserService {
 	
 	private static final AtomicLong counter = new AtomicLong();
 
