@@ -26,13 +26,6 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>
             </dependency>
-            <!-- 连接池、MyBatis -->
-            <dependency>
-                <groupId>com.zaxxer</groupId>
-                <artifactId>HikariCP</artifactId>
-                <version>2.5.1</version>
-                <scope>compile</scope>
-            </dependency>
         </dependencies>
 
 </project>
